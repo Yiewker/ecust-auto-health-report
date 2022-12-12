@@ -19,12 +19,15 @@ def run(playwright: Playwright, stu_id, password) -> None:
     page.click("ins")
     # Click text=下一步
     page.click("text=下一步")
-    page.click("label:has-text(\"健康\")")
-    # Click #radio_sfycxxwc42
-    page.click("#radio_sfycxxwc42")
-    # Click text=*行程码是否绿码： 是否 >> ins
-    page.click("#radio_xcm5")
-    page.click("text=在上海")
+    
+    #以下内容为按钮：
+    page.click("#radio_swjkzk17") # 健康状况：健康
+    page.click("#radio_xrywz33") # 现人员位置：在上海(33)   徐汇校区（29）
+    page.click("#radio_xcm5") # 行程码是否绿码： 是
+    page.click("#radio_twsfzc9") # 体温是否正常：是
+    page.click("#radio_jkmsflm13") # 健康码是否绿码： 是
+    page.click("#radio_sfycxxwc41")# 是否有从学校外出: 否
+    
     # Click text=提交
     page.click("text=提交")
     # Click text=确定
