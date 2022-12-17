@@ -22,10 +22,10 @@ def run(playwright: Playwright, stu_id, password) -> None:
     
     #以下内容为按钮：
     page.click("#radio_swjkzk17") # 健康状况：健康
-    page.click("#radio_xrywz33") # 现人员位置：在上海(33)   徐汇校区（29）
-    page.click("#radio_xcm5") # 行程码是否绿码： 是
-    page.click("#radio_twsfzc9") # 体温是否正常：是
-    page.click("#radio_jkmsflm13") # 健康码是否绿码： 是
+    page.click("#radio_xrywz29") # 现人员位置：在上海(33)   徐汇校区（29）
+    #page.click("#radio_xcm5") # 行程码是否绿码： 是
+    #page.click("#radio_twsfzc9") # 体温是否正常：是
+    #page.click("#radio_jkmsflm13") # 健康码是否绿码： 是
     page.click("#radio_sfycxxwc41")# 是否有从学校外出: 否
     
     # Click text=提交
